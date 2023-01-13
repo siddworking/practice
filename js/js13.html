@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var employeearr = [ 
+        {empname:"Sidd",empid:1,sal:45000},
+        {empname:"Man",empid:2,sal:4000},
+        {empname:"Manoj",empid:3,sal:5000},
+        {empname:"Zakariya",empid:4,sal:4500000}
+        ]
+
+        function showtable(){
+            var str =" <table  border='2px'><tr><th>EmpName</th><th>Empid</th><th>Sal</th></tr>"
+                for(var o of employeearr){
+                    str +=" <tr><td>"+o.empname+"</td>"+"<td>"+o.empid+"</td>"+"<td>"+o.sal+"</td></tr>"
+                }
+                str +=" </table>";
+                document.getElementById("mydiv").innerHTML=str;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <button type="button" name="btn" id="btn" onclick="showtable()">Show Table</button>
+  <div id="mydiv"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #1{
+            position: fixed;
+        }
+           
+    </style>
+    <script>
+        function display(){
+           
+            var a = document.getElementById("nm").value;
+            var z = document.getElementById("txt");
+            var i=1;
+            alert("hi");
+            while(i<=a){
+               
+                if(i%2 == 0)
+                {
+                  
+                    z.value += i+"\n";
+                    document.getElementById("new").innerHTML +=i+"\n";
+                
+                }
+                i++;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div id="1">
+        Enter the number : <input type="number" name="nm" id="nm"> </input>
+    </div>
+   
+    <button type="button" name="btn" id="btn"  value="submit" onclick="display()"> submit</button>
+    <textarea name="txt" id="txt"></textarea>
+    <!-- <input type="text"  name="mytest"  id="mytest" </input> -->
+    <div id="new"></div>
+</body>
+</html>

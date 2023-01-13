@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function empsort(){
+            console.log("hiii")
+            var emparr = [document.getElementById("emp1").value,document.getElementById("emp2").value,document.getElementById("emp3").value,
+            document.getElementById("emp4").value,document.getElementById("emp5").value,document.getElementById("emp6").value];
+
+          var emp=  emparr.sort();
+
+            // for(var o of emp)
+            // {
+                document.getElementById("mytext").value = emparr+" ,  ";
+            // }
+        }
+    </script>
+</head>
+<body>
+    <form >
+        Emp1 : <input type="text" name="emp1" id="emp1"> <br>
+        Emp2 : <input type="text" name="emp2" id="emp2"> <br>
+        Emp3: <input type="text" name="emp3" id="emp3"> <br>
+        Emp4 : <input type="text" name="emp4" id="emp4"> <br>
+        Emp5 : <input type="text" name="emp5" id="emp5"> <br>
+        Emp6 : <input type="text" name="emp6" id="emp6"> <br>
+   
+   <button type="button" name="btn" id="btn" onclick="empsort()">Sort emp names</button>
+
+   <textarea name="mytext" id="mytext" cols="30" rows="10"></textarea>
+   <div id="mydiv"></div>
+        
+    </form>
+</body>
+</html>
